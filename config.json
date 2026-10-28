@@ -25,7 +25,7 @@
   "lot": 100,
   "participation_previous_volume": 0.01,
   "buy_window_start": "09:30",
-  "buy_window_end": "10:00",
+  "buy_window_end": "23:59",
   "quote_max_age_seconds": 120,
   "calendar_valid_through": "2026-12-31",
   "holidays_2026": [
@@ -63,5 +63,7 @@
     "2026-10-06",
     "2026-10-07"
   ],
-  "calendar_source": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20251222_10802507.shtml"
+  "calendar_source": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20251222_10802507.shtml",
+  "buy_price_model": "OFFICIAL_OPEN_PRICE_PAPER",
+  "same_day_delayed_recording": true
 }

@@ -26,7 +26,7 @@ def mark_and_report(state,quotes,now,cfg,after_close=False):
  for sig in queued:
   lines+=[f'### {sig["signal_date"]}信号 → {sig["buy_date"]}模拟买入','',f'合格样本{sig["eligible_count"]}只，向上取整选最低10%共{len(sig["selected"])}只。','', '|代码|名称|H代码|溢价率|参考均分预算|','|---|---|---|---:|---:|']
   for r in sig['selected']:lines.append(f'|{r["symbol"]}|{r["name"]}|{r["H_symbol"]}|{r["premium"]:.2%}|{nav/len(sig["selected"]):.2f}|')
- lines+=['','## 最近事件','', '```json', json.dumps(state['events'][-15:],ensure_ascii=False,indent=2),'```','', '实时报价不新鲜、停牌、涨跌停或资金不足会拒绝模拟成交；不会补记过去的开盘价。收盘卖出为提前登记意图后的日线收盘近似。','公司行动现金/送转可用日缺失，保守假设20交易日延迟、20%红利税；不同于券商实际结算。']
+ lines+=['','## 最近事件','', '```json', json.dumps(state['events'][-15:],ensure_ascii=False,indent=2),'```','', '买入统一使用当日官方开盘价模型；任务延迟可在当日补记，execution_time为09:30、observed_at为实际记录时间，不代表当时真实下单。非当日行情、无开盘价、停牌、开盘涨停或资金不足会拒绝成交；不跨日补买。收盘卖出为提前登记意图后的日线收盘近似。','公司行动现金/送转可用日缺失，保守假设20交易日延迟、20%红利税；不同于券商实际结算。']
  text='\n'.join(lines)+'\n';(ROOT/'reports/latest.md').write_text(text);(ROOT/f'reports/{today}.md').write_text(text);d.save(ROOT/'data/status.json',state['nav_history'][today])
 
 def run(now,phase='auto',clock_source=None):
@@ -43,15 +43,19 @@ def run(now,phase='auto',clock_source=None):
  now=clock_source();clock=now.strftime('%H:%M')
  if now.date().isoformat()!=today:raise ValueError('任务跨日，停止执行')
  c.corporate_actions(state,corp,now,cfg)
- if phase=='buy':
-  if not ('09:30'<=clock<'10:00'):raise ValueError('已错过模拟买入窗口，不倒填开盘成交')
+ if phase=='buy' and clock<cfg['buy_window_start']:raise ValueError('尚未开盘，禁止模拟买入')
+ held_before_buy=set(state['positions'])
+ # Opening-price model: any same-day task can recover a missed morning job.
+ if cfg['buy_window_start']<=clock<cfg['buy_window_end']:
   for sig in state['signals'].values():
    if not sig.get('attempted') and sig['buy_date']==today:
     symbols=[r['symbol'] for r in sig['selected']]+list(state['positions']);quotes=d.quotes(symbols);now=clock_source();clock=now.strftime('%H:%M')
     if now.date().isoformat()!=today:raise ValueError('行情请求跨日，停止执行')
     d.save(ROOT/f'data/raw/buy_quotes_{today}.json',{'captured_at':now.isoformat(),'quotes':quotes})
     c.buy(state,sig,quotes,now,cfg)
- elif phase=='prepare-sell':c.prepare_sell(state,now,cfg)
+ if phase in ['settle-close','scan'] and set(state['positions'])-held_before_buy:
+  corp=d.actions(state['positions'],now)
+ if phase=='prepare-sell':c.prepare_sell(state,now,cfg)
  elif phase in ['settle-close','scan']:
   if clock<'15:05':raise ValueError('未到收盘结算时间')
   if quotes:d.save(ROOT/f'data/raw/close_quotes_{today}.json',{'captured_at':now.isoformat(),'quotes':quotes})
@@ -68,9 +72,9 @@ def run(now,phase='auto',clock_source=None):
    assert buydate>today and c.is_session(buydate,cfg)
    sig={'id':'AH10_'+today,'signal_date':today,'generated_at':now.isoformat(),'buy_date':buydate,'eligible_count':len(eligible),'selection_fraction':.1,'selected':selected,'attempted':False,'bootstrap_exception':today==cfg['bootstrap_signal_date'],'factor_date':selected[0]['factor_date']}
    sig['sha256']=hashlib.sha256(json.dumps(sig,ensure_ascii=False,sort_keys=True).encode()).hexdigest();state['signals'][today]=sig;d.save(ROOT/f'data/signals/{today}.json',{'signal':sig,'eligible_sorted':eligible,'excluded':[r for r in rows if r.get('excluded')]});c.event(state,'SIGNAL_FROZEN',now,id=sig['id'],count=len(selected),eligible=len(eligible),buy_date=buydate,sha256=sig['sha256'])
- # Expired signals are audited, never executed retrospectively.
+ # Do not fill an earlier date; only same-day opening-price model recovery is allowed.
  for sig in state['signals'].values():
-  if not sig.get('attempted') and (sig['buy_date']<today or (sig['buy_date']==today and clock>='10:00')):
+  if not sig.get('attempted') and sig['buy_date']<today:
    sig['attempted']=True;sig['expired']=True;c.event(state,'BUY_WINDOW_MISSED',now,signal=sig['id'])
  mark_and_report(state,quotes,now,cfg,phase in ['scan','settle-close']);d.save(p,state)
  err=ROOT/'reports/error_latest.md'
@@ -84,3 +88,4 @@ def main():
  except Exception as ex:
   text=f'# 模拟流程失败\n\n时间：{now.isoformat()}\n\n{type(ex).__name__}: {ex}\n\n未将过期行情补记成真实成交，请查看Actions日志。\n';(ROOT/'reports/error_latest.md').write_text(text);print(text,file=sys.stderr);raise
 if __name__=='__main__':main()
+

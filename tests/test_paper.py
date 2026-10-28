@@ -6,8 +6,8 @@ from ahpaper import core as c
 from ahpaper.data import parse_quotes
 CFG=json.loads((Path(__file__).resolve().parents[1]/'config.json').read_text());TZ=ZoneInfo('Asia/Shanghai')
 def now(text='2026-10-29 09:32:00'):return datetime.fromisoformat(text).replace(tzinfo=TZ)
-def quote(t=None,last=10,ask=10):
- t=t or now();return {'name':'测试','last':last,'ask':ask,'bid':9.99,'upper':11,'lower':9,'volume':10000000,'timestamp':t,'date':t.date().isoformat()}
+def quote(t=None,last=10,ask=10,opened=10):
+ t=t or now();return {'name':'测试','open':opened,'last':last,'ask':ask,'bid':9.99,'upper':11,'lower':9,'volume':10000000,'timestamp':t,'date':t.date().isoformat()}
 def signal():return {'id':'x','signal_date':'2026-10-28','buy_date':'2026-10-29','selected':[{'symbol':'sh600036','A_volume_shares':100000000}],'attempted':False}
 class PaperTests(unittest.TestCase):
  def test_calendar_and_bootstrap(self):
@@ -15,13 +15,18 @@ class PaperTests(unittest.TestCase):
   with self.assertRaises(ValueError):c.is_session('2027-01-04',CFG)
  def test_ceil_decile_ties(self):
   rows=[{'symbol':str(i).zfill(6),'premium':0.3} for i in range(131,-1,-1)];s,allrows=c.select(rows,CFG);self.assertEqual(len(s),14);self.assertEqual(s[0]['symbol'],'000000')
- def test_live_fill_idempotent_cash(self):
+ def test_open_price_fill_idempotent_cash(self):
   st=c.initial_state(CFG);sig=signal();q={'sh600036':quote()};c.buy(st,sig,q,now(),CFG);self.assertEqual(st['positions']['sh600036']['qty']%100,0);self.assertGreater(st['cash'],0);n=len(st['events']);c.buy(st,sig,q,now(),CFG);self.assertEqual(len(st['events']),n);c.assert_account(st)
  def test_no_stale_or_upper_limit_fills(self):
-  for q in [quote(t=now()-timedelta(minutes=5)),quote(last=11,ask=11),quote(ask=0)]:
+  for q in [quote(t=now()-timedelta(days=1)),quote(opened=11),quote(opened=0)]:
    st=c.initial_state(CFG);c.buy(st,signal(),{'sh600036':q},now(),CFG);self.assertFalse(st['positions']);self.assertEqual(st['cash'],200000)
- def test_no_retroactive_open_fill(self):
-  st=c.initial_state(CFG);c.buy(st,signal(),{'sh600036':quote()},now('2026-10-29 10:01:00'),CFG);self.assertFalse(st['positions'])
+ def test_same_day_delayed_open_model_and_actual_observation_time(self):
+  st=c.initial_state(CFG);tm=now('2026-10-29 16:30:00');q=quote(t=now('2026-10-29 15:00:00'),last=10.8,ask=10.9,opened=9.8);c.buy(st,signal(),{'sh600036':q},tm,CFG)
+  e=next(e for e in st['events'] if e['kind']=='BUY');self.assertEqual(e['price'],9.8);self.assertEqual(e['observed_at'],tm.isoformat());self.assertEqual(e['execution_time'],'2026-10-29T09:30:00+08:00');self.assertEqual(e['model'],'opening_price_model')
+ def test_open_model_ignores_later_upper_limit_and_ask(self):
+  st=c.initial_state(CFG);q=quote(last=11,ask=0,opened=10);q['volume']=1;c.buy(st,signal(),{'sh600036':q},now(),CFG);self.assertIn('sh600036',st['positions']);self.assertEqual(st['events'][0]['price'],10)
+ def test_no_cross_day_open_fill(self):
+  st=c.initial_state(CFG);c.buy(st,signal(),{'sh600036':quote()},now('2026-10-30 10:01:00'),CFG);self.assertFalse(st['positions'])
  def test_no_close_without_precommitted_intent(self):
   st=c.initial_state(CFG);c.buy(st,signal(),{'sh600036':quote()},now(),CFG);before=copy.deepcopy(st);c.settle_sell(st,{'sh600036':quote(now('2026-10-30 15:10:00'))},now('2026-10-30 15:15:00'),CFG);self.assertEqual(st['positions'],before['positions'])
  def test_sell_close_dedup_and_T1(self):
@@ -66,6 +71,19 @@ class WallClockTests(unittest.TestCase):
    st=c.initial_state(CFG);st['signals']={'2026-10-28':signal()};save(root/'data/state.json',st)
    with patch.object(app,'ROOT',root),patch.object(app.d,'quotes',return_value={'sh600036':quote(now('2026-10-29 09:32:05'))}):out=app.run(now('2026-10-29 09:31:00'),'buy',clock_source=lambda:now('2026-10-29 09:32:10'))
    self.assertIn('sh600036',out['positions']);self.assertEqual(out['events'][0]['time'],now('2026-10-29 09:32:10').isoformat())
+class OpeningRecoveryTests(unittest.TestCase):
+ def test_late_auto_task_records_open_instead_of_ask(self):
+  import main as app
+  import tempfile
+  from unittest.mock import patch
+  from ahpaper.data import save
+  with tempfile.TemporaryDirectory() as t:
+   root=Path(t);(root/'data').mkdir();(root/'reports').mkdir();save(root/'config.json',CFG)
+   st=c.initial_state(CFG);st['signals']={'2026-10-28':signal()};save(root/'data/state.json',st)
+   tm=now('2026-10-29 16:40:00');q=quote(now('2026-10-29 15:00:00'),last=10.8,ask=10.9,opened=9.8)
+   with patch.object(app,'ROOT',root),patch.object(app.d,'quotes',return_value={'sh600036':q}),patch.object(app.d,'actions',return_value=[]):out=app.run(tm,'auto')
+   fills=[e for e in out['events'] if e['kind']=='BUY'];self.assertEqual(len(fills),1);self.assertEqual(fills[0]['price'],9.8);self.assertEqual(fills[0]['observed_at'],tm.isoformat());self.assertNotIn('expired',out['signals']['2026-10-28']);c.assert_account(out)
+
 class CrossSectionTests(unittest.TestCase):
  def test_holiday_uses_both_legs_same_day(self):
   import tempfile
@@ -86,3 +104,4 @@ class CrossSectionTests(unittest.TestCase):
    with patch.object(source,'refresh_pairs',return_value=[pair]),patch.object(source,'quotes',return_value={}),patch.object(source,'fx_rates',return_value={'2026-10-28':.9}):
     with self.assertRaises(ValueError):source.signal_inputs(Path(t),now('2026-10-28 16:40:00'),CFG)
 if __name__=='__main__':unittest.main()
+

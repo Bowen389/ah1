@@ -39,6 +39,10 @@ def select(rows,cfg):
 
 def fresh(q,now,cfg):
  return q['date']==now.date().isoformat() and 0<q['last'] and 0<=(now-q['timestamp']).total_seconds()<=cfg['quote_max_age_seconds']
+def opening_quote(q,now):
+ try:
+  return q['date']==now.date().isoformat() and q['timestamp'].date()==now.date() and q['timestamp'].strftime('%H:%M')>='09:30' and q['timestamp']<=now and math.isfinite(q['open']) and q['open']>0 and q['volume']>0
+ except (KeyError,ValueError,TypeError):return False
 def buy(state,signal,quotes,now,cfg):
  today=now.date().isoformat();clock=now.strftime('%H:%M')
  if signal.get('attempted') or signal['buy_date']!=today:return
@@ -46,27 +50,27 @@ def buy(state,signal,quotes,now,cfg):
  if signal['signal_date']>=today:raise ValueError('信号必须早于买入日')
  nav=state['cash']+sum(r['amount'] for r in state['receivables'])
  for s,p in state['positions'].items():
-  if s not in quotes or not fresh(quotes[s],now,cfg):raise ValueError('持仓估值行情不新鲜，停止本轮买入')
-  nav+=p['qty']*quotes[s]['last']
+  if s not in quotes or not opening_quote(quotes[s],now):raise ValueError('持仓缺少当日开盘价，停止本轮买入')
+  nav+=p['qty']*quotes[s]['open']
  budget=nav/len(signal['selected'])
  for r in signal['selected']:
   s=r['symbol'];q=quotes.get(s);reason=None
   if s in state['positions'] or len(state['positions'])>=len(signal['selected']):reason='existing_position_or_slots_full'
-  elif not q or not fresh(q,now,cfg):reason='stale_or_missing_quote'
+  elif not q or not opening_quote(q,now):reason='missing_or_wrong_day_open'
   elif 'ST' in q['name'].upper() or '退' in q['name']:reason='current_ST_or_delisting'
-  elif q['volume']<=0 or q['ask']<=0:reason='suspended_or_no_ask'
+  elif q['open']<=0:reason='missing_open_price'
   elif q['upper']<=0 or q['lower']<=0:reason='missing_exchange_limit_prices'
-  elif q['last']>=q['upper']-.005 or q['ask']>=q['upper']-.005:reason='at_upper_limit'
+  elif q['open']>=q['upper']-.005:reason='open_at_upper_limit'
   if reason:event(state,'REJECT',now,symbol=s,side='BUY',reason=reason,signal=signal['id']);continue
-  px=min(q['upper'],price(max(q['ask'],q['last'])*(1+cfg['slippage'])))
-  qty=min(math.floor(min(budget,state['cash'])/px/cfg['lot'])*cfg['lot'],math.floor(r['A_volume_shares']*cfg['participation_previous_volume']/cfg['lot'])*cfg['lot'],math.floor(q['volume']*cfg['participation_previous_volume']/cfg['lot'])*cfg['lot'])
+  px=price(q['open'])
+  qty=min(math.floor(min(budget,state['cash'])/px/cfg['lot'])*cfg['lot'],math.floor(r['A_volume_shares']*cfg['participation_previous_volume']/cfg['lot'])*cfg['lot'])
   while qty>0:
    fee=costs(qty*px,False,cfg)
    if qty*px+sum(fee.values())<=min(budget,state['cash'])+.0001:break
    qty-=cfg['lot']
   if qty<=0:event(state,'REJECT',now,symbol=s,side='BUY',reason='cash_lot_or_volume_cap',signal=signal['id']);continue
   value=money(qty*px);state['cash']=money(state['cash']-value-sum(fee.values()));state['positions'][s]={'name':q['name'],'qty':qty,'entry_date':today,'cost':money(value+sum(fee.values())),'locked_until':None}
-  event(state,'BUY',now,symbol=s,qty=qty,price=px,value=value,fees=fee,quote_time=q['timestamp'].isoformat(),signal=signal['id'],model='live_ask_observed_paper_fill')
+  event(state,'BUY',now,symbol=s,qty=qty,price=px,value=value,fees=fee,quote_time=q['timestamp'].isoformat(),signal=signal['id'],model='opening_price_model',execution_time=today+'T09:30:00+08:00',observed_at=now.isoformat(),price_source='Tencent official open',same_day_delayed_recording=clock>='09:40')
  signal['attempted']=True;signal['attempt_time']=now.isoformat();assert_account(state)
 
 def prepare_sell(state,now,cfg):
@@ -121,3 +125,4 @@ def corporate_actions(state,actions,now,cfg,after_close=False):
   if r['due']<=today:state['cash']=money(state['cash']+r['amount']);event(state,'DIVIDEND_PAID',now,amount=r['amount'],key=r['key'])
   else:keep.append(r)
  state['receivables']=keep;assert_account(state)
+

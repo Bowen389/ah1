@@ -5,7 +5,7 @@ on:
     paths: ['ahpaper/**', 'main.py', 'tests/**', 'config.json', '.github/workflows/paper.yml']
   workflow_dispatch:
   schedule:
-    # UTC; Beijing = UTC+8. Backups never backdate fills.
+    # UTC; Beijing = UTC+8. Same-day open-price paper recovery retains actual observation times.
     - cron: '31,36,41,51 1 * * 1-5'
     - cron: '50,55 6 * * 1-5'
     - cron: '10,20 7 * * 1-5'
@@ -74,3 +74,4 @@ jobs:
           fi
           if [ -f reports/latest.md ]; then cat reports/latest.md >> "$GITHUB_STEP_SUMMARY"; fi
           if [ -f reports/error_latest.md ]; then cat reports/error_latest.md >> "$GITHUB_STEP_SUMMARY"; fi
+
