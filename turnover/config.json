@@ -1,0 +1,19 @@
+{
+  "mode":"PAPER",
+  "initial_cash":200000,
+  "lookback":20,
+  "max_positions":10,
+  "bootstrap_signal_date":"2026-10-28",
+  "bootstrap_buy_date":"2026-10-29",
+  "buy_commission":"0.0001",
+  "sell_commission":"0.0001",
+  "minimum_commission":"5.00",
+  "stamp_sell":"0.0001",
+  "transfer_rate":"0.00001",
+  "dividend_tax":"0.20",
+  "corporate_action_delay_sessions":20,
+  "prior_volume_participation":"0.01",
+  "minimum_age_days":365,
+  "minimum_quote_coverage":0.995,
+  "note":"纯模拟账本，无券商下单接口。首期10月29日买、10月30日月末卖；之后按月度原规则。"
+}

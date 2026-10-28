@@ -1,0 +1,8 @@
+{
+  "broker_orders_sent": 0,
+  "mode": "PAPER",
+  "phase": "close",
+  "status": "OK",
+  "updated_at": "2026-10-28T16:46:42.884148+08:00",
+  "warning": "初始预热缺失3只；当日未更新/隔离0只；有效报价覆盖100.00%。 公司行动使用当日已获取缓存。"
+}

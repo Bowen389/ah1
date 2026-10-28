@@ -1,0 +1,32 @@
+{
+  "blocked": [],
+  "cash": "200000.00",
+  "dividend_tax": "0.00",
+  "entitlements": [],
+  "equity": [
+    {
+      "cash": "200000.00",
+      "date": "2026-10-28",
+      "dividend_receivable": "0.00",
+      "market_value": "0.00",
+      "nav": "200000.00",
+      "positions": 0,
+      "recorded_at": "2026-10-28T16:43:27.609998+08:00",
+      "return_pct": "0.00",
+      "stale_marks": []
+    }
+  ],
+  "events": [],
+  "last_completed_close": "2026-10-28",
+  "mode": "PAPER",
+  "orders": [],
+  "pending_sells": [],
+  "phase_keys": [
+    "2026-10-28:open",
+    "2026-10-28:close"
+  ],
+  "positions": {},
+  "realized_pnl": "0.00",
+  "receivables": [],
+  "schema": 1
+}

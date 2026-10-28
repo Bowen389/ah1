@@ -1,0 +1,52 @@
+name: Low turnover CNY 200k paper account
+on:
+  schedule:
+    - cron: '35,50 1 * * 1-5'
+    - cron: '40 7 * * 1-5'
+    - cron: '10 8 * * 1-5'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['turnover/src/**', 'turnover/run.py', 'turnover/config.json', '.github/workflows/turnover-paper.yml', 'turnover/tests/**']
+permissions:
+  contents: write
+concurrency:
+  group: huanshoulv-low-turnover-paper-ledger
+  cancel-in-progress: false
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: turnover
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test accounting and trading gates
+        run: python -m unittest discover -s tests -v
+      - name: Run paper account
+        id: paper
+        continue-on-error: true
+        run: python run.py
+      - name: Persist account and diagnostics
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update paper account and market-data status'
+            for attempt in 1 2 3; do
+              if git push origin HEAD:main; then exit 0; fi
+              git pull --rebase origin main || exit 1
+            done
+            exit 1
+          fi
+      - name: Surface data failures
+        if: steps.paper.outcome == 'failure'
+        run: exit 1
