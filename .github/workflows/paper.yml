@@ -31,6 +31,19 @@ jobs:
           python-version: '3.11'
       - name: Test time, cash, idempotency and execution guards
         run: python -m unittest discover -s tests -v
+      - name: Check public data connectivity from GitHub
+        if: github.event_name == 'push'
+        run: |
+          python - <<'PYCODE'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          from ahpaper.data import quotes, actions
+          now = datetime.now(ZoneInfo('Asia/Shanghai'))
+          q = quotes(['sh600036', 'hk03968'])
+          assert len(q) == 2 and all(x['last'] > 0 for x in q.values())
+          a = actions(['sh600036'], now)
+          print('Public A/H quotes and corporate action endpoint OK:', {s: {'date': x['date'], 'last': x['last']} for s, x in q.items()}, 'actions:', len(a))
+          PYCODE
       - name: Screen / paper execute / mark portfolio
         run: python main.py --phase auto
       - name: Keep a recoverable ledger snapshot
