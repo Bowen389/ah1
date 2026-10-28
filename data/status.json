@@ -1,0 +1,11 @@
+{
+  "asof": "2026-10-28T16:48:52.986937+08:00",
+  "cash": 200000.0,
+  "market_value": 0.0,
+  "receivable": 0.0,
+  "nav": 200000.0,
+  "return": 0.0,
+  "positions": 0,
+  "stale_marks": [],
+  "final_close_mark": true
+}

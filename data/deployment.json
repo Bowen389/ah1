@@ -1,0 +1,11 @@
+{
+  "strategy": "AH_PREMIUM_BOTTOM_10_PERCENT",
+  "deployment_date": "2026-10-28",
+  "bootstrap_buy_date": "2026-10-29",
+  "initial_cash": 200000,
+  "account_mode": "PAPER_ONLY",
+  "local_tests_passed": 15,
+  "signal_eligible": 162,
+  "signal_selected": 17,
+  "bootstrap_exception": "Initial two-session holding; exit 2026-10-30 then monthly rotation"
+}

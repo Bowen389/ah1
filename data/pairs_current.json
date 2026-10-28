@@ -1,0 +1,1491 @@
+{
+  "asof": "2026-10-28T16:41:38.604262+08:00",
+  "source": "Eastmoney RPT_F10_ORG_BASICINFO STR_CODEA/STR_CODEH",
+  "pairs": [
+    {
+      "SECUCODE": "000002.SZ",
+      "SECURITY_CODE": "000002",
+      "SECURITY_NAME_ABBR": "万科A",
+      "STR_CODEA": "000002.SZ",
+      "STR_CODEH": "02202.HK",
+      "LISTING_DATE": "1991-01-29 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000039.SZ",
+      "SECURITY_CODE": "000039",
+      "SECURITY_NAME_ABBR": "中集集团",
+      "STR_CODEA": "000039.SZ",
+      "STR_CODEH": "02039.HK",
+      "LISTING_DATE": "1994-04-08 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000063.SZ",
+      "SECURITY_CODE": "000063",
+      "SECURITY_NAME_ABBR": "中兴通讯",
+      "STR_CODEA": "000063.SZ",
+      "STR_CODEH": "00763.HK",
+      "LISTING_DATE": "1997-11-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000157.SZ",
+      "SECURITY_CODE": "000157",
+      "SECURITY_NAME_ABBR": "中联重科",
+      "STR_CODEA": "000157.SZ",
+      "STR_CODEH": "01157.HK",
+      "LISTING_DATE": "2000-10-12 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000166.SZ",
+      "SECURITY_CODE": "000166",
+      "SECURITY_NAME_ABBR": "申万宏源",
+      "STR_CODEA": "000166.SZ",
+      "STR_CODEH": "06806.HK",
+      "LISTING_DATE": "2015-01-26 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000333.SZ",
+      "SECURITY_CODE": "000333",
+      "SECURITY_NAME_ABBR": "美的集团",
+      "STR_CODEA": "000333.SZ",
+      "STR_CODEH": "00300.HK",
+      "LISTING_DATE": "2013-09-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000338.SZ",
+      "SECURITY_CODE": "000338",
+      "SECURITY_NAME_ABBR": "潍柴动力",
+      "STR_CODEA": "000338.SZ",
+      "STR_CODEH": "02338.HK",
+      "LISTING_DATE": "2007-04-30 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000488.SZ",
+      "SECURITY_CODE": "000488",
+      "SECURITY_NAME_ABBR": "ST晨鸣",
+      "STR_CODEA": "000488.SZ",
+      "STR_CODEH": "01812.HK",
+      "LISTING_DATE": "2000-11-20 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000513.SZ",
+      "SECURITY_CODE": "000513",
+      "SECURITY_NAME_ABBR": "丽珠集团",
+      "STR_CODEA": "000513.SZ",
+      "STR_CODEH": "01513.HK",
+      "LISTING_DATE": "1993-10-28 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000756.SZ",
+      "SECURITY_CODE": "000756",
+      "SECURITY_NAME_ABBR": "新华制药",
+      "STR_CODEA": "000756.SZ",
+      "STR_CODEH": "00719.HK",
+      "LISTING_DATE": "1997-08-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000776.SZ",
+      "SECURITY_CODE": "000776",
+      "SECURITY_NAME_ABBR": "广发证券",
+      "STR_CODEA": "000776.SZ",
+      "STR_CODEH": "01776.HK",
+      "LISTING_DATE": "1997-06-11 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000898.SZ",
+      "SECURITY_CODE": "000898",
+      "SECURITY_NAME_ABBR": "鞍钢股份",
+      "STR_CODEA": "000898.SZ",
+      "STR_CODEH": "00347.HK",
+      "LISTING_DATE": "1997-12-25 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "000921.SZ",
+      "SECURITY_CODE": "000921",
+      "SECURITY_NAME_ABBR": "海信家电",
+      "STR_CODEA": "000921.SZ",
+      "STR_CODEH": "00921.HK",
+      "LISTING_DATE": "1999-07-13 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "001236.SZ",
+      "SECURITY_CODE": "001236",
+      "SECURITY_NAME_ABBR": "弘业期货",
+      "STR_CODEA": "001236.SZ",
+      "STR_CODEH": "03678.HK",
+      "LISTING_DATE": "2022-08-05 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "001246.SZ",
+      "SECURITY_CODE": "001246",
+      "SECURITY_NAME_ABBR": "力勤资源",
+      "STR_CODEA": "001246.SZ",
+      "STR_CODEH": "02245.HK",
+      "LISTING_DATE": "2026-09-30 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "001289.SZ",
+      "SECURITY_CODE": "001289",
+      "SECURITY_NAME_ABBR": "龙源电力",
+      "STR_CODEA": "001289.SZ",
+      "STR_CODEH": "00916.HK",
+      "LISTING_DATE": "2022-01-24 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "001389.SZ",
+      "SECURITY_CODE": "001389",
+      "SECURITY_NAME_ABBR": "广合科技",
+      "STR_CODEA": "001389.SZ",
+      "STR_CODEH": "01989.HK",
+      "LISTING_DATE": "2024-04-02 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002050.SZ",
+      "SECURITY_CODE": "002050",
+      "SECURITY_NAME_ABBR": "三花智控",
+      "STR_CODEA": "002050.SZ",
+      "STR_CODEH": "02050.HK",
+      "LISTING_DATE": "2005-06-07 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002130.SZ",
+      "SECURITY_CODE": "002130",
+      "SECURITY_NAME_ABBR": "沃尔核材",
+      "STR_CODEA": "002130.SZ",
+      "STR_CODEH": "09981.HK",
+      "LISTING_DATE": "2007-04-20 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002202.SZ",
+      "SECURITY_CODE": "002202",
+      "SECURITY_NAME_ABBR": "金风科技",
+      "STR_CODEA": "002202.SZ",
+      "STR_CODEH": "02208.HK",
+      "LISTING_DATE": "2007-12-26 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002352.SZ",
+      "SECURITY_CODE": "002352",
+      "SECURITY_NAME_ABBR": "顺丰控股",
+      "STR_CODEA": "002352.SZ",
+      "STR_CODEH": "06936.HK",
+      "LISTING_DATE": "2010-02-05 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002384.SZ",
+      "SECURITY_CODE": "002384",
+      "SECURITY_NAME_ABBR": "东山精密",
+      "STR_CODEA": "002384.SZ",
+      "STR_CODEH": "02384.HK",
+      "LISTING_DATE": "2010-04-09 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002399.SZ",
+      "SECURITY_CODE": "002399",
+      "SECURITY_NAME_ABBR": "海普瑞",
+      "STR_CODEA": "002399.SZ",
+      "STR_CODEH": "09989.HK",
+      "LISTING_DATE": "2010-05-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002460.SZ",
+      "SECURITY_CODE": "002460",
+      "SECURITY_NAME_ABBR": "赣锋锂业",
+      "STR_CODEA": "002460.SZ",
+      "STR_CODEH": "01772.HK",
+      "LISTING_DATE": "2010-08-10 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002466.SZ",
+      "SECURITY_CODE": "002466",
+      "SECURITY_NAME_ABBR": "天齐锂业",
+      "STR_CODEA": "002466.SZ",
+      "STR_CODEH": "09696.HK",
+      "LISTING_DATE": "2010-08-31 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002475.SZ",
+      "SECURITY_CODE": "002475",
+      "SECURITY_NAME_ABBR": "立讯精密",
+      "STR_CODEA": "002475.SZ",
+      "STR_CODEH": "02475.HK",
+      "LISTING_DATE": "2010-09-15 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002487.SZ",
+      "SECURITY_CODE": "002487",
+      "SECURITY_NAME_ABBR": "大金重工",
+      "STR_CODEA": "002487.SZ",
+      "STR_CODEH": "01081.HK",
+      "LISTING_DATE": "2010-10-15 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002490.SZ",
+      "SECURITY_CODE": "002490",
+      "SECURITY_NAME_ABBR": "山东墨龙",
+      "STR_CODEA": "002490.SZ",
+      "STR_CODEH": "00568.HK",
+      "LISTING_DATE": "2010-10-21 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002594.SZ",
+      "SECURITY_CODE": "002594",
+      "SECURITY_NAME_ABBR": "比亚迪",
+      "STR_CODEA": "002594.SZ",
+      "STR_CODEH": "01211.HK",
+      "LISTING_DATE": "2011-06-30 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002600.SZ",
+      "SECURITY_CODE": "002600",
+      "SECURITY_NAME_ABBR": "领益智造",
+      "STR_CODEA": "002600.SZ",
+      "STR_CODEH": "01688.HK",
+      "LISTING_DATE": "2011-07-15 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002672.SZ",
+      "SECURITY_CODE": "002672",
+      "SECURITY_NAME_ABBR": "东江环保",
+      "STR_CODEA": "002672.SZ",
+      "STR_CODEH": "00895.HK",
+      "LISTING_DATE": "2012-04-26 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002703.SZ",
+      "SECURITY_CODE": "002703",
+      "SECURITY_NAME_ABBR": "浙江世宝",
+      "STR_CODEA": "002703.SZ",
+      "STR_CODEH": "01057.HK",
+      "LISTING_DATE": "2012-11-02 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002714.SZ",
+      "SECURITY_CODE": "002714",
+      "SECURITY_NAME_ABBR": "牧原股份",
+      "STR_CODEA": "002714.SZ",
+      "STR_CODEH": "02714.HK",
+      "LISTING_DATE": "2014-01-28 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002747.SZ",
+      "SECURITY_CODE": "002747",
+      "SECURITY_NAME_ABBR": "埃斯顿",
+      "STR_CODEA": "002747.SZ",
+      "STR_CODEH": "02715.HK",
+      "LISTING_DATE": "2015-03-20 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002768.SZ",
+      "SECURITY_CODE": "002768",
+      "SECURITY_NAME_ABBR": "国恩股份",
+      "STR_CODEA": "002768.SZ",
+      "STR_CODEH": "02768.HK",
+      "LISTING_DATE": "2015-06-30 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002803.SZ",
+      "SECURITY_CODE": "002803",
+      "SECURITY_NAME_ABBR": "吉宏股份",
+      "STR_CODEA": "002803.SZ",
+      "STR_CODEH": "02603.HK",
+      "LISTING_DATE": "2016-07-12 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002821.SZ",
+      "SECURITY_CODE": "002821",
+      "SECURITY_NAME_ABBR": "凯莱英",
+      "STR_CODEA": "002821.SZ",
+      "STR_CODEH": "06821.HK",
+      "LISTING_DATE": "2016-11-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002865.SZ",
+      "SECURITY_CODE": "002865",
+      "SECURITY_NAME_ABBR": "钧达股份",
+      "STR_CODEA": "002865.SZ",
+      "STR_CODEH": "02865.HK",
+      "LISTING_DATE": "2017-04-25 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002881.SZ",
+      "SECURITY_CODE": "002881",
+      "SECURITY_NAME_ABBR": "美格智能",
+      "STR_CODEA": "002881.SZ",
+      "STR_CODEH": "03268.HK",
+      "LISTING_DATE": "2017-06-22 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002936.SZ",
+      "SECURITY_CODE": "002936",
+      "SECURITY_NAME_ABBR": "郑州银行",
+      "STR_CODEA": "002936.SZ",
+      "STR_CODEH": "06196.HK",
+      "LISTING_DATE": "2018-09-19 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "002948.SZ",
+      "SECURITY_CODE": "002948",
+      "SECURITY_NAME_ABBR": "青岛银行",
+      "STR_CODEA": "002948.SZ",
+      "STR_CODEH": "03866.HK",
+      "LISTING_DATE": "2019-01-16 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "003021.SZ",
+      "SECURITY_CODE": "003021",
+      "SECURITY_NAME_ABBR": "兆威机电",
+      "STR_CODEA": "003021.SZ",
+      "STR_CODEH": "02692.HK",
+      "LISTING_DATE": "2020-12-04 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "003816.SZ",
+      "SECURITY_CODE": "003816",
+      "SECURITY_NAME_ABBR": "中国广核",
+      "STR_CODEA": "003816.SZ",
+      "STR_CODEH": "01816.HK",
+      "LISTING_DATE": "2019-08-26 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600011.SH",
+      "SECURITY_CODE": "600011",
+      "SECURITY_NAME_ABBR": "华能国际",
+      "STR_CODEA": "600011.SH",
+      "STR_CODEH": "00902.HK",
+      "LISTING_DATE": "2001-12-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600012.SH",
+      "SECURITY_CODE": "600012",
+      "SECURITY_NAME_ABBR": "皖通高速",
+      "STR_CODEA": "600012.SH",
+      "STR_CODEH": "00995.HK",
+      "LISTING_DATE": "2003-01-07 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600016.SH",
+      "SECURITY_CODE": "600016",
+      "SECURITY_NAME_ABBR": "民生银行",
+      "STR_CODEA": "600016.SH",
+      "STR_CODEH": "01988.HK",
+      "LISTING_DATE": "2000-12-19 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600026.SH",
+      "SECURITY_CODE": "600026",
+      "SECURITY_NAME_ABBR": "中远海能",
+      "STR_CODEA": "600026.SH",
+      "STR_CODEH": "01138.HK",
+      "LISTING_DATE": "2002-05-23 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600027.SH",
+      "SECURITY_CODE": "600027",
+      "SECURITY_NAME_ABBR": "华电国际",
+      "STR_CODEA": "600027.SH",
+      "STR_CODEH": "01071.HK",
+      "LISTING_DATE": "2005-02-03 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600028.SH",
+      "SECURITY_CODE": "600028",
+      "SECURITY_NAME_ABBR": "中国石化",
+      "STR_CODEA": "600028.SH",
+      "STR_CODEH": "00386.HK",
+      "LISTING_DATE": "2001-08-08 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600029.SH",
+      "SECURITY_CODE": "600029",
+      "SECURITY_NAME_ABBR": "南方航空",
+      "STR_CODEA": "600029.SH",
+      "STR_CODEH": "01055.HK",
+      "LISTING_DATE": "2003-07-25 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600030.SH",
+      "SECURITY_CODE": "600030",
+      "SECURITY_NAME_ABBR": "中信证券",
+      "STR_CODEA": "600030.SH",
+      "STR_CODEH": "06030.HK",
+      "LISTING_DATE": "2003-01-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600031.SH",
+      "SECURITY_CODE": "600031",
+      "SECURITY_NAME_ABBR": "三一重工",
+      "STR_CODEA": "600031.SH",
+      "STR_CODEH": "06031.HK",
+      "LISTING_DATE": "2003-07-03 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600036.SH",
+      "SECURITY_CODE": "600036",
+      "SECURITY_NAME_ABBR": "招商银行",
+      "STR_CODEA": "600036.SH",
+      "STR_CODEH": "03968.HK",
+      "LISTING_DATE": "2002-04-09 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600115.SH",
+      "SECURITY_CODE": "600115",
+      "SECURITY_NAME_ABBR": "中国东航",
+      "STR_CODEA": "600115.SH",
+      "STR_CODEH": "00670.HK",
+      "LISTING_DATE": "1997-11-05 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600188.SH",
+      "SECURITY_CODE": "600188",
+      "SECURITY_NAME_ABBR": "兖矿能源",
+      "STR_CODEA": "600188.SH",
+      "STR_CODEH": "01171.HK",
+      "LISTING_DATE": "1998-07-01 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600196.SH",
+      "SECURITY_CODE": "600196",
+      "SECURITY_NAME_ABBR": "复星医药",
+      "STR_CODEA": "600196.SH",
+      "STR_CODEH": "02196.HK",
+      "LISTING_DATE": "1998-08-07 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600276.SH",
+      "SECURITY_CODE": "600276",
+      "SECURITY_NAME_ABBR": "恒瑞医药",
+      "STR_CODEA": "600276.SH",
+      "STR_CODEH": "01276.HK",
+      "LISTING_DATE": "2000-10-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600332.SH",
+      "SECURITY_CODE": "600332",
+      "SECURITY_NAME_ABBR": "白云山",
+      "STR_CODEA": "600332.SH",
+      "STR_CODEH": "00874.HK",
+      "LISTING_DATE": "2001-02-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600362.SH",
+      "SECURITY_CODE": "600362",
+      "SECURITY_NAME_ABBR": "江西铜业",
+      "STR_CODEA": "600362.SH",
+      "STR_CODEH": "00358.HK",
+      "LISTING_DATE": "2002-01-11 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600377.SH",
+      "SECURITY_CODE": "600377",
+      "SECURITY_NAME_ABBR": "宁沪高速",
+      "STR_CODEA": "600377.SH",
+      "STR_CODEH": "00177.HK",
+      "LISTING_DATE": "2001-01-16 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600547.SH",
+      "SECURITY_CODE": "600547",
+      "SECURITY_NAME_ABBR": "山东黄金",
+      "STR_CODEA": "600547.SH",
+      "STR_CODEH": "01787.HK",
+      "LISTING_DATE": "2003-08-28 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600548.SH",
+      "SECURITY_CODE": "600548",
+      "SECURITY_NAME_ABBR": "深高速",
+      "STR_CODEA": "600548.SH",
+      "STR_CODEH": "00548.HK",
+      "LISTING_DATE": "2001-12-25 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600585.SH",
+      "SECURITY_CODE": "600585",
+      "SECURITY_NAME_ABBR": "海螺水泥",
+      "STR_CODEA": "600585.SH",
+      "STR_CODEH": "00914.HK",
+      "LISTING_DATE": "2002-02-07 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600600.SH",
+      "SECURITY_CODE": "600600",
+      "SECURITY_NAME_ABBR": "青岛啤酒",
+      "STR_CODEA": "600600.SH",
+      "STR_CODEH": "00168.HK",
+      "LISTING_DATE": "1993-08-27 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600635.SH",
+      "SECURITY_CODE": "600635",
+      "SECURITY_NAME_ABBR": "大众公用",
+      "STR_CODEA": "600635.SH",
+      "STR_CODEH": "01635.HK",
+      "LISTING_DATE": "1993-03-04 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600660.SH",
+      "SECURITY_CODE": "600660",
+      "SECURITY_NAME_ABBR": "福耀玻璃",
+      "STR_CODEA": "600660.SH",
+      "STR_CODEH": "03606.HK",
+      "LISTING_DATE": "1993-06-10 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600685.SH",
+      "SECURITY_CODE": "600685",
+      "SECURITY_NAME_ABBR": "中船防务",
+      "STR_CODEA": "600685.SH",
+      "STR_CODEH": "00317.HK",
+      "LISTING_DATE": "1993-10-28 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600688.SH",
+      "SECURITY_CODE": "600688",
+      "SECURITY_NAME_ABBR": "上海石化",
+      "STR_CODEA": "600688.SH",
+      "STR_CODEH": "00338.HK",
+      "LISTING_DATE": "1993-11-08 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600690.SH",
+      "SECURITY_CODE": "600690",
+      "SECURITY_NAME_ABBR": "海尔智家",
+      "STR_CODEA": "600690.SH",
+      "STR_CODEH": "06690.HK",
+      "LISTING_DATE": "1993-11-19 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600699.SH",
+      "SECURITY_CODE": "600699",
+      "SECURITY_NAME_ABBR": "均胜电子",
+      "STR_CODEA": "600699.SH",
+      "STR_CODEH": "00699.HK",
+      "LISTING_DATE": "1993-12-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600775.SH",
+      "SECURITY_CODE": "600775",
+      "SECURITY_NAME_ABBR": "南京熊猫",
+      "STR_CODEA": "600775.SH",
+      "STR_CODEH": "00553.HK",
+      "LISTING_DATE": "1996-11-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600801.SH",
+      "SECURITY_CODE": "600801",
+      "SECURITY_NAME_ABBR": "华新建材",
+      "STR_CODEA": "600801.SH",
+      "STR_CODEH": "06655.HK",
+      "LISTING_DATE": "1994-01-03 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600808.SH",
+      "SECURITY_CODE": "600808",
+      "SECURITY_NAME_ABBR": "马钢股份",
+      "STR_CODEA": "600808.SH",
+      "STR_CODEH": "00323.HK",
+      "LISTING_DATE": "1994-01-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600860.SH",
+      "SECURITY_CODE": "600860",
+      "SECURITY_NAME_ABBR": "京城股份",
+      "STR_CODEA": "600860.SH",
+      "STR_CODEH": "00187.HK",
+      "LISTING_DATE": "1994-05-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600871.SH",
+      "SECURITY_CODE": "600871",
+      "SECURITY_NAME_ABBR": "石化油服",
+      "STR_CODEA": "600871.SH",
+      "STR_CODEH": "01033.HK",
+      "LISTING_DATE": "1995-04-11 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600874.SH",
+      "SECURITY_CODE": "600874",
+      "SECURITY_NAME_ABBR": "创业环保",
+      "STR_CODEA": "600874.SH",
+      "STR_CODEH": "01065.HK",
+      "LISTING_DATE": "1995-06-30 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600875.SH",
+      "SECURITY_CODE": "600875",
+      "SECURITY_NAME_ABBR": "东方电气",
+      "STR_CODEA": "600875.SH",
+      "STR_CODEH": "01072.HK",
+      "LISTING_DATE": "1995-10-10 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600876.SH",
+      "SECURITY_CODE": "600876",
+      "SECURITY_NAME_ABBR": "凯盛新能",
+      "STR_CODEA": "600876.SH",
+      "STR_CODEH": "01108.HK",
+      "LISTING_DATE": "1995-10-31 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600938.SH",
+      "SECURITY_CODE": "600938",
+      "SECURITY_NAME_ABBR": "中国海油",
+      "STR_CODEA": "600938.SH",
+      "STR_CODEH": "00883.HK",
+      "LISTING_DATE": "2022-04-21 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600941.SH",
+      "SECURITY_CODE": "600941",
+      "SECURITY_NAME_ABBR": "中国移动",
+      "STR_CODEA": "600941.SH",
+      "STR_CODEH": "00941.HK",
+      "LISTING_DATE": "2022-01-05 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600956.SH",
+      "SECURITY_CODE": "600956",
+      "SECURITY_NAME_ABBR": "新天绿能",
+      "STR_CODEA": "600956.SH",
+      "STR_CODEH": "00956.HK",
+      "LISTING_DATE": "2020-06-29 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600958.SH",
+      "SECURITY_CODE": "600958",
+      "SECURITY_NAME_ABBR": "东方证券",
+      "STR_CODEA": "600958.SH",
+      "STR_CODEH": "03958.HK",
+      "LISTING_DATE": "2015-03-23 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600988.SH",
+      "SECURITY_CODE": "600988",
+      "SECURITY_NAME_ABBR": "赤峰黄金",
+      "STR_CODEA": "600988.SH",
+      "STR_CODEH": "06693.HK",
+      "LISTING_DATE": "2004-04-14 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "600999.SH",
+      "SECURITY_CODE": "600999",
+      "SECURITY_NAME_ABBR": "招商证券",
+      "STR_CODEA": "600999.SH",
+      "STR_CODEH": "06099.HK",
+      "LISTING_DATE": "2009-11-17 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601005.SH",
+      "SECURITY_CODE": "601005",
+      "SECURITY_NAME_ABBR": "重庆钢铁",
+      "STR_CODEA": "601005.SH",
+      "STR_CODEH": "01053.HK",
+      "LISTING_DATE": "2007-02-28 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601038.SH",
+      "SECURITY_CODE": "601038",
+      "SECURITY_NAME_ABBR": "一拖股份",
+      "STR_CODEA": "601038.SH",
+      "STR_CODEH": "00038.HK",
+      "LISTING_DATE": "2012-08-08 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601066.SH",
+      "SECURITY_CODE": "601066",
+      "SECURITY_NAME_ABBR": "中信建投",
+      "STR_CODEA": "601066.SH",
+      "STR_CODEH": "06066.HK",
+      "LISTING_DATE": "2018-06-20 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601068.SH",
+      "SECURITY_CODE": "601068",
+      "SECURITY_NAME_ABBR": "中铝国际",
+      "STR_CODEA": "601068.SH",
+      "STR_CODEH": "02068.HK",
+      "LISTING_DATE": "2018-08-31 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601077.SH",
+      "SECURITY_CODE": "601077",
+      "SECURITY_NAME_ABBR": "渝农商行",
+      "STR_CODEA": "601077.SH",
+      "STR_CODEH": "03618.HK",
+      "LISTING_DATE": "2019-10-29 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601088.SH",
+      "SECURITY_CODE": "601088",
+      "SECURITY_NAME_ABBR": "中国神华",
+      "STR_CODEA": "601088.SH",
+      "STR_CODEH": "01088.HK",
+      "LISTING_DATE": "2007-10-09 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601107.SH",
+      "SECURITY_CODE": "601107",
+      "SECURITY_NAME_ABBR": "四川成渝",
+      "STR_CODEA": "601107.SH",
+      "STR_CODEH": "00107.HK",
+      "LISTING_DATE": "2009-07-27 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601111.SH",
+      "SECURITY_CODE": "601111",
+      "SECURITY_NAME_ABBR": "中国国航",
+      "STR_CODEA": "601111.SH",
+      "STR_CODEH": "00753.HK",
+      "LISTING_DATE": "2006-08-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601127.SH",
+      "SECURITY_CODE": "601127",
+      "SECURITY_NAME_ABBR": "赛力斯",
+      "STR_CODEA": "601127.SH",
+      "STR_CODEH": "09927.HK",
+      "LISTING_DATE": "2016-06-15 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601186.SH",
+      "SECURITY_CODE": "601186",
+      "SECURITY_NAME_ABBR": "中国铁建",
+      "STR_CODEA": "601186.SH",
+      "STR_CODEH": "01186.HK",
+      "LISTING_DATE": "2008-03-10 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601211.SH",
+      "SECURITY_CODE": "601211",
+      "SECURITY_NAME_ABBR": "国泰海通",
+      "STR_CODEA": "601211.SH",
+      "STR_CODEH": "02611.HK",
+      "LISTING_DATE": "2015-06-26 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601238.SH",
+      "SECURITY_CODE": "601238",
+      "SECURITY_NAME_ABBR": "广汽集团",
+      "STR_CODEA": "601238.SH",
+      "STR_CODEH": "02238.HK",
+      "LISTING_DATE": "2012-03-29 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601288.SH",
+      "SECURITY_CODE": "601288",
+      "SECURITY_NAME_ABBR": "农业银行",
+      "STR_CODEA": "601288.SH",
+      "STR_CODEH": "01288.HK",
+      "LISTING_DATE": "2010-07-15 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601298.SH",
+      "SECURITY_CODE": "601298",
+      "SECURITY_NAME_ABBR": "青岛港",
+      "STR_CODEA": "601298.SH",
+      "STR_CODEH": "06198.HK",
+      "LISTING_DATE": "2019-01-21 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601318.SH",
+      "SECURITY_CODE": "601318",
+      "SECURITY_NAME_ABBR": "中国平安",
+      "STR_CODEA": "601318.SH",
+      "STR_CODEH": "02318.HK",
+      "LISTING_DATE": "2007-03-01 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601319.SH",
+      "SECURITY_CODE": "601319",
+      "SECURITY_NAME_ABBR": "中国人保",
+      "STR_CODEA": "601319.SH",
+      "STR_CODEH": "01339.HK",
+      "LISTING_DATE": "2018-11-16 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601326.SH",
+      "SECURITY_CODE": "601326",
+      "SECURITY_NAME_ABBR": "秦港股份",
+      "STR_CODEA": "601326.SH",
+      "STR_CODEH": "03369.HK",
+      "LISTING_DATE": "2017-08-16 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601328.SH",
+      "SECURITY_CODE": "601328",
+      "SECURITY_NAME_ABBR": "交通银行",
+      "STR_CODEA": "601328.SH",
+      "STR_CODEH": "03328.HK",
+      "LISTING_DATE": "2007-05-15 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601330.SH",
+      "SECURITY_CODE": "601330",
+      "SECURITY_NAME_ABBR": "绿色动力",
+      "STR_CODEA": "601330.SH",
+      "STR_CODEH": "01330.HK",
+      "LISTING_DATE": "2018-06-11 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601333.SH",
+      "SECURITY_CODE": "601333",
+      "SECURITY_NAME_ABBR": "广深铁路",
+      "STR_CODEA": "601333.SH",
+      "STR_CODEH": "00525.HK",
+      "LISTING_DATE": "2006-12-22 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601336.SH",
+      "SECURITY_CODE": "601336",
+      "SECURITY_NAME_ABBR": "新华保险",
+      "STR_CODEA": "601336.SH",
+      "STR_CODEH": "01336.HK",
+      "LISTING_DATE": "2011-12-16 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601375.SH",
+      "SECURITY_CODE": "601375",
+      "SECURITY_NAME_ABBR": "中原证券",
+      "STR_CODEA": "601375.SH",
+      "STR_CODEH": "01375.HK",
+      "LISTING_DATE": "2017-01-03 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601390.SH",
+      "SECURITY_CODE": "601390",
+      "SECURITY_NAME_ABBR": "中国中铁",
+      "STR_CODEA": "601390.SH",
+      "STR_CODEH": "00390.HK",
+      "LISTING_DATE": "2007-12-03 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601398.SH",
+      "SECURITY_CODE": "601398",
+      "SECURITY_NAME_ABBR": "工商银行",
+      "STR_CODEA": "601398.SH",
+      "STR_CODEH": "01398.HK",
+      "LISTING_DATE": "2006-10-27 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601456.SH",
+      "SECURITY_CODE": "601456",
+      "SECURITY_NAME_ABBR": "国联民生",
+      "STR_CODEA": "601456.SH",
+      "STR_CODEH": "01456.HK",
+      "LISTING_DATE": "2020-07-31 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601588.SH",
+      "SECURITY_CODE": "601588",
+      "SECURITY_NAME_ABBR": "北辰实业",
+      "STR_CODEA": "601588.SH",
+      "STR_CODEH": "00588.HK",
+      "LISTING_DATE": "2006-10-16 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601598.SH",
+      "SECURITY_CODE": "601598",
+      "SECURITY_NAME_ABBR": "中国外运",
+      "STR_CODEA": "601598.SH",
+      "STR_CODEH": "00598.HK",
+      "LISTING_DATE": "2019-01-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601600.SH",
+      "SECURITY_CODE": "601600",
+      "SECURITY_NAME_ABBR": "中国铝业",
+      "STR_CODEA": "601600.SH",
+      "STR_CODEH": "02600.HK",
+      "LISTING_DATE": "2007-04-30 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601601.SH",
+      "SECURITY_CODE": "601601",
+      "SECURITY_NAME_ABBR": "中国太保",
+      "STR_CODEA": "601601.SH",
+      "STR_CODEH": "02601.HK",
+      "LISTING_DATE": "2007-12-25 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601607.SH",
+      "SECURITY_CODE": "601607",
+      "SECURITY_NAME_ABBR": "上海医药",
+      "STR_CODEA": "601607.SH",
+      "STR_CODEH": "02607.HK",
+      "LISTING_DATE": "1994-03-24 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601618.SH",
+      "SECURITY_CODE": "601618",
+      "SECURITY_NAME_ABBR": "中国中冶",
+      "STR_CODEA": "601618.SH",
+      "STR_CODEH": "01618.HK",
+      "LISTING_DATE": "2009-09-21 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601628.SH",
+      "SECURITY_CODE": "601628",
+      "SECURITY_NAME_ABBR": "中国人寿",
+      "STR_CODEA": "601628.SH",
+      "STR_CODEH": "02628.HK",
+      "LISTING_DATE": "2007-01-09 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601633.SH",
+      "SECURITY_CODE": "601633",
+      "SECURITY_NAME_ABBR": "长城汽车",
+      "STR_CODEA": "601633.SH",
+      "STR_CODEH": "02333.HK",
+      "LISTING_DATE": "2011-09-28 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601658.SH",
+      "SECURITY_CODE": "601658",
+      "SECURITY_NAME_ABBR": "邮储银行",
+      "STR_CODEA": "601658.SH",
+      "STR_CODEH": "01658.HK",
+      "LISTING_DATE": "2019-12-10 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601678.SH",
+      "SECURITY_CODE": "601678",
+      "SECURITY_NAME_ABBR": "滨化股份",
+      "STR_CODEA": "601678.SH",
+      "STR_CODEH": "06745.HK",
+      "LISTING_DATE": "2010-02-23 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601688.SH",
+      "SECURITY_CODE": "601688",
+      "SECURITY_NAME_ABBR": "华泰证券",
+      "STR_CODEA": "601688.SH",
+      "STR_CODEH": "06886.HK",
+      "LISTING_DATE": "2010-02-26 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601717.SH",
+      "SECURITY_CODE": "601717",
+      "SECURITY_NAME_ABBR": "中创智领",
+      "STR_CODEA": "601717.SH",
+      "STR_CODEH": "00564.HK",
+      "LISTING_DATE": "2010-08-03 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601727.SH",
+      "SECURITY_CODE": "601727",
+      "SECURITY_NAME_ABBR": "上海电气",
+      "STR_CODEA": "601727.SH",
+      "STR_CODEH": "02727.HK",
+      "LISTING_DATE": "2008-12-05 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601728.SH",
+      "SECURITY_CODE": "601728",
+      "SECURITY_NAME_ABBR": "中国电信",
+      "STR_CODEA": "601728.SH",
+      "STR_CODEH": "00728.HK",
+      "LISTING_DATE": "2021-08-20 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601766.SH",
+      "SECURITY_CODE": "601766",
+      "SECURITY_NAME_ABBR": "中国中车",
+      "STR_CODEA": "601766.SH",
+      "STR_CODEH": "01766.HK",
+      "LISTING_DATE": "2008-08-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601788.SH",
+      "SECURITY_CODE": "601788",
+      "SECURITY_NAME_ABBR": "光大证券",
+      "STR_CODEA": "601788.SH",
+      "STR_CODEH": "06178.HK",
+      "LISTING_DATE": "2009-08-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601800.SH",
+      "SECURITY_CODE": "601800",
+      "SECURITY_NAME_ABBR": "中国交建",
+      "STR_CODEA": "601800.SH",
+      "STR_CODEH": "01800.HK",
+      "LISTING_DATE": "2012-03-09 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601808.SH",
+      "SECURITY_CODE": "601808",
+      "SECURITY_NAME_ABBR": "中海油服",
+      "STR_CODEA": "601808.SH",
+      "STR_CODEH": "02883.HK",
+      "LISTING_DATE": "2007-09-28 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601811.SH",
+      "SECURITY_CODE": "601811",
+      "SECURITY_NAME_ABBR": "新华文轩",
+      "STR_CODEA": "601811.SH",
+      "STR_CODEH": "00811.HK",
+      "LISTING_DATE": "2016-08-08 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601818.SH",
+      "SECURITY_CODE": "601818",
+      "SECURITY_NAME_ABBR": "光大银行",
+      "STR_CODEA": "601818.SH",
+      "STR_CODEH": "06818.HK",
+      "LISTING_DATE": "2010-08-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601828.SH",
+      "SECURITY_CODE": "601828",
+      "SECURITY_NAME_ABBR": "美凯龙",
+      "STR_CODEA": "601828.SH",
+      "STR_CODEH": "01528.HK",
+      "LISTING_DATE": "2018-01-17 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601857.SH",
+      "SECURITY_CODE": "601857",
+      "SECURITY_NAME_ABBR": "中国石油",
+      "STR_CODEA": "601857.SH",
+      "STR_CODEH": "00857.HK",
+      "LISTING_DATE": "2007-11-05 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601865.SH",
+      "SECURITY_CODE": "601865",
+      "SECURITY_NAME_ABBR": "福莱特",
+      "STR_CODEA": "601865.SH",
+      "STR_CODEH": "06865.HK",
+      "LISTING_DATE": "2019-02-15 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601866.SH",
+      "SECURITY_CODE": "601866",
+      "SECURITY_NAME_ABBR": "中远海发",
+      "STR_CODEA": "601866.SH",
+      "STR_CODEH": "02866.HK",
+      "LISTING_DATE": "2007-12-12 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601868.SH",
+      "SECURITY_CODE": "601868",
+      "SECURITY_NAME_ABBR": "中国能建",
+      "STR_CODEA": "601868.SH",
+      "STR_CODEH": "03996.HK",
+      "LISTING_DATE": "2021-09-28 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601869.SH",
+      "SECURITY_CODE": "601869",
+      "SECURITY_NAME_ABBR": "长飞光纤",
+      "STR_CODEA": "601869.SH",
+      "STR_CODEH": "06869.HK",
+      "LISTING_DATE": "2018-07-20 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601880.SH",
+      "SECURITY_CODE": "601880",
+      "SECURITY_NAME_ABBR": "辽港股份",
+      "STR_CODEA": "601880.SH",
+      "STR_CODEH": "02880.HK",
+      "LISTING_DATE": "2010-12-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601881.SH",
+      "SECURITY_CODE": "601881",
+      "SECURITY_NAME_ABBR": "中国银河",
+      "STR_CODEA": "601881.SH",
+      "STR_CODEH": "06881.HK",
+      "LISTING_DATE": "2017-01-23 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601888.SH",
+      "SECURITY_CODE": "601888",
+      "SECURITY_NAME_ABBR": "中国中免",
+      "STR_CODEA": "601888.SH",
+      "STR_CODEH": "01880.HK",
+      "LISTING_DATE": "2009-10-15 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601898.SH",
+      "SECURITY_CODE": "601898",
+      "SECURITY_NAME_ABBR": "中煤能源",
+      "STR_CODEA": "601898.SH",
+      "STR_CODEH": "01898.HK",
+      "LISTING_DATE": "2008-02-01 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601899.SH",
+      "SECURITY_CODE": "601899",
+      "SECURITY_NAME_ABBR": "紫金矿业",
+      "STR_CODEA": "601899.SH",
+      "STR_CODEH": "02899.HK",
+      "LISTING_DATE": "2008-04-25 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601916.SH",
+      "SECURITY_CODE": "601916",
+      "SECURITY_NAME_ABBR": "浙商银行",
+      "STR_CODEA": "601916.SH",
+      "STR_CODEH": "02016.HK",
+      "LISTING_DATE": "2019-11-26 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601919.SH",
+      "SECURITY_CODE": "601919",
+      "SECURITY_NAME_ABBR": "中远海控",
+      "STR_CODEA": "601919.SH",
+      "STR_CODEH": "01919.HK",
+      "LISTING_DATE": "2007-06-26 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601939.SH",
+      "SECURITY_CODE": "601939",
+      "SECURITY_NAME_ABBR": "建设银行",
+      "STR_CODEA": "601939.SH",
+      "STR_CODEH": "00939.HK",
+      "LISTING_DATE": "2007-09-25 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601963.SH",
+      "SECURITY_CODE": "601963",
+      "SECURITY_NAME_ABBR": "重庆银行",
+      "STR_CODEA": "601963.SH",
+      "STR_CODEH": "01963.HK",
+      "LISTING_DATE": "2021-02-05 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601988.SH",
+      "SECURITY_CODE": "601988",
+      "SECURITY_NAME_ABBR": "中国银行",
+      "STR_CODEA": "601988.SH",
+      "STR_CODEH": "03988.HK",
+      "LISTING_DATE": "2006-07-05 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601991.SH",
+      "SECURITY_CODE": "601991",
+      "SECURITY_NAME_ABBR": "大唐发电",
+      "STR_CODEA": "601991.SH",
+      "STR_CODEH": "00991.HK",
+      "LISTING_DATE": "2006-12-20 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601992.SH",
+      "SECURITY_CODE": "601992",
+      "SECURITY_NAME_ABBR": "金隅集团",
+      "STR_CODEA": "601992.SH",
+      "STR_CODEH": "02009.HK",
+      "LISTING_DATE": "2011-03-01 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601995.SH",
+      "SECURITY_CODE": "601995",
+      "SECURITY_NAME_ABBR": "中金公司",
+      "STR_CODEA": "601995.SH",
+      "STR_CODEH": "03908.HK",
+      "LISTING_DATE": "2020-11-02 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "601998.SH",
+      "SECURITY_CODE": "601998",
+      "SECURITY_NAME_ABBR": "中信银行",
+      "STR_CODEA": "601998.SH",
+      "STR_CODEH": "00998.HK",
+      "LISTING_DATE": "2007-04-27 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603083.SH",
+      "SECURITY_CODE": "603083",
+      "SECURITY_NAME_ABBR": "剑桥科技",
+      "STR_CODEA": "603083.SH",
+      "STR_CODEH": "06166.HK",
+      "LISTING_DATE": "2017-11-10 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603093.SH",
+      "SECURITY_CODE": "603093",
+      "SECURITY_NAME_ABBR": "南华期货",
+      "STR_CODEA": "603093.SH",
+      "STR_CODEH": "02691.HK",
+      "LISTING_DATE": "2019-08-30 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603127.SH",
+      "SECURITY_CODE": "603127",
+      "SECURITY_NAME_ABBR": "昭衍新药",
+      "STR_CODEA": "603127.SH",
+      "STR_CODEH": "06127.HK",
+      "LISTING_DATE": "2017-08-25 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603228.SH",
+      "SECURITY_CODE": "603228",
+      "SECURITY_NAME_ABBR": "景旺电子",
+      "STR_CODEA": "603228.SH",
+      "STR_CODEH": "03228.HK",
+      "LISTING_DATE": "2017-01-06 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603259.SH",
+      "SECURITY_CODE": "603259",
+      "SECURITY_NAME_ABBR": "药明康德",
+      "STR_CODEA": "603259.SH",
+      "STR_CODEH": "02359.HK",
+      "LISTING_DATE": "2018-05-08 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603288.SH",
+      "SECURITY_CODE": "603288",
+      "SECURITY_NAME_ABBR": "海天味业",
+      "STR_CODEA": "603288.SH",
+      "STR_CODEH": "03288.HK",
+      "LISTING_DATE": "2014-02-11 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603296.SH",
+      "SECURITY_CODE": "603296",
+      "SECURITY_NAME_ABBR": "华勤技术",
+      "STR_CODEA": "603296.SH",
+      "STR_CODEH": "03296.HK",
+      "LISTING_DATE": "2023-08-08 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603341.SH",
+      "SECURITY_CODE": "603341",
+      "SECURITY_NAME_ABBR": "龙旗科技",
+      "STR_CODEA": "603341.SH",
+      "STR_CODEH": "09611.HK",
+      "LISTING_DATE": "2024-03-01 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603345.SH",
+      "SECURITY_CODE": "603345",
+      "SECURITY_NAME_ABBR": "安井食品",
+      "STR_CODEA": "603345.SH",
+      "STR_CODEH": "02648.HK",
+      "LISTING_DATE": "2017-02-22 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603501.SH",
+      "SECURITY_CODE": "603501",
+      "SECURITY_NAME_ABBR": "豪威集团",
+      "STR_CODEA": "603501.SH",
+      "STR_CODEH": "00501.HK",
+      "LISTING_DATE": "2017-05-04 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603650.SH",
+      "SECURITY_CODE": "603650",
+      "SECURITY_NAME_ABBR": "彤程新材",
+      "STR_CODEA": "603650.SH",
+      "STR_CODEH": "09607.HK",
+      "LISTING_DATE": "2018-06-27 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603906.SH",
+      "SECURITY_CODE": "603906",
+      "SECURITY_NAME_ABBR": "龙蟠科技",
+      "STR_CODEA": "603906.SH",
+      "STR_CODEH": "02465.HK",
+      "LISTING_DATE": "2017-04-10 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603986.SH",
+      "SECURITY_CODE": "603986",
+      "SECURITY_NAME_ABBR": "兆易创新",
+      "STR_CODEA": "603986.SH",
+      "STR_CODEH": "03986.HK",
+      "LISTING_DATE": "2016-08-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "603993.SH",
+      "SECURITY_CODE": "603993",
+      "SECURITY_NAME_ABBR": "洛阳钼业",
+      "STR_CODEA": "603993.SH",
+      "STR_CODEH": "03993.HK",
+      "LISTING_DATE": "2012-10-09 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "605198.SH",
+      "SECURITY_CODE": "605198",
+      "SECURITY_NAME_ABBR": "安德利",
+      "STR_CODEA": "605198.SH",
+      "STR_CODEH": "02218.HK",
+      "LISTING_DATE": "2020-09-18 00:00:00",
+      "LISTING_STATE": "0"
+    },
+    {
+      "SECUCODE": "605499.SH",
+      "SECURITY_CODE": "605499",
+      "SECURITY_NAME_ABBR": "东鹏饮料",
+      "STR_CODEA": "605499.SH",
+      "STR_CODEH": "09980.HK",
+      "LISTING_DATE": "2021-05-27 00:00:00",
+      "LISTING_STATE": "0"
+    }
+  ]
+}

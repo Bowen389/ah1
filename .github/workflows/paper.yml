@@ -1,0 +1,57 @@
+name: AH lowest-decile paper portfolio
+on:
+  push:
+    branches: [main]
+    paths: ['ahpaper/**', 'main.py', 'tests/**', 'config.json', '.github/workflows/paper.yml']
+  workflow_dispatch:
+  schedule:
+    # UTC; Beijing = UTC+8. Backups never backdate fills.
+    - cron: '31,36,41,51 1 * * 1-5'
+    - cron: '50,55 6 * * 1-5'
+    - cron: '10,20 7 * * 1-5'
+    - cron: '35,45,55 8 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: ah-paper-ledger-main
+  cancel-in-progress: false
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test time, cash, idempotency and execution guards
+        run: python -m unittest discover -s tests -v
+      - name: Screen / paper execute / mark portfolio
+        run: python main.py --phase auto
+      - name: Keep a recoverable ledger snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ah-paper-${{ github.run_id }}
+          path: |
+            data
+            reports
+          retention-days: 90
+      - name: Persist ledger and publish run summary
+        if: always()
+        shell: bash
+        run: |
+          git config user.name 'ah-paper-bot'
+          git config user.email 'ah-paper-bot@users.noreply.github.com'
+          git add data reports
+          if ! git diff --cached --quiet; then
+            git commit -m 'paper: persist AH signals and portfolio ledger'
+            git push origin HEAD:main
+          fi
+          if [ -f reports/latest.md ]; then cat reports/latest.md >> "$GITHUB_STEP_SUMMARY"; fi
+          if [ -f reports/error_latest.md ]; then cat reports/error_latest.md >> "$GITHUB_STEP_SUMMARY"; fi
