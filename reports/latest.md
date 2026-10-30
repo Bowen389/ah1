@@ -1,15 +1,15 @@
 # AH溢价最低10% · 20万元模拟账户
 
-更新时间：2026-10-29T23:25:33.012910+08:00（北京时间）
+更新时间：2026-10-30T15:36:37.748495+08:00（北京时间）
 
 **PAPER_ONLY：没有真实券商订单。**
 
 - 初始资金：200,000.00元
 - 现金：40,637.37元
-- 持仓市值：159,327.00元
+- 持仓市值：160,403.00元
 - 应收红利：0.00元
-- 总资产：199,964.37元
-- 累计收益：-0.02%
+- 总资产：201,040.37元
+- 累计收益：0.52%
 - 持仓数：15
 - 未更新收盘估值：无
 
@@ -41,319 +41,109 @@
 ```json
 [
   {
-    "id": 4,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 19,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh600036",
-    "qty": 200,
-    "price": 42.5,
-    "value": 8500.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.09
-    },
-    "quote_time": "2026-10-29T15:32:21+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 5,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 20,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sz000338",
-    "qty": 500,
-    "price": 21.25,
-    "value": 10625.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.11
-    },
-    "quote_time": "2026-10-29T15:31:39+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 6,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 21,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sz000333",
-    "qty": 100,
-    "price": 85.95,
-    "value": 8595.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.09
-    },
-    "quote_time": "2026-10-29T15:32:15+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 7,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 22,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh600276",
-    "qty": 200,
-    "price": 48.77,
-    "value": 9754.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.1
-    },
-    "quote_time": "2026-10-29T15:32:15+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 8,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 23,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh601899",
-    "qty": 400,
-    "price": 28.2,
-    "value": 11280.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.11
-    },
-    "quote_time": "2026-10-29T15:32:27+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 9,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 24,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh601328",
-    "qty": 1400,
-    "price": 8.36,
-    "value": 11704.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.12
-    },
-    "quote_time": "2026-10-29T15:32:13+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 10,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 25,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh601919",
-    "qty": 700,
-    "price": 16.64,
-    "value": 11648.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.12
-    },
-    "quote_time": "2026-10-29T15:32:23+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 11,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 26,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sz002475",
-    "qty": 200,
-    "price": 49.21,
-    "value": 9842.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.1
-    },
-    "quote_time": "2026-10-29T15:32:15+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 12,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 27,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh601658",
-    "qty": 2000,
-    "price": 5.69,
-    "value": 11380.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.11
-    },
-    "quote_time": "2026-10-29T15:32:19+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 13,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 28,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh600690",
-    "qty": 600,
-    "price": 19.45,
-    "value": 11670.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.12
-    },
-    "quote_time": "2026-10-29T15:32:12+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 14,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 29,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh600660",
-    "qty": 200,
-    "price": 53.22,
-    "value": 10644.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.11
-    },
-    "quote_time": "2026-10-29T15:32:26+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 15,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 30,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh600031",
-    "qty": 600,
-    "price": 18.3,
-    "value": 10980.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.11
-    },
-    "quote_time": "2026-10-29T15:32:16+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 16,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 31,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh600012",
-    "qty": 600,
-    "price": 17.59,
-    "value": 10554.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.11
-    },
-    "quote_time": "2026-10-29T15:32:23+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 17,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 32,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh600026",
-    "qty": 600,
-    "price": 19.25,
-    "value": 11550.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.12
-    },
-    "quote_time": "2026-10-29T15:32:23+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   },
   {
-    "id": 18,
-    "kind": "BUY",
-    "time": "2026-10-29T15:32:30.247599+08:00",
+    "id": 33,
+    "kind": "MISSED_CLOSE_INTENT",
+    "time": "2026-10-30T15:36:37.748495+08:00",
     "symbol": "sh600585",
-    "qty": 600,
-    "price": 17.6,
-    "value": 10560.0,
-    "fees": {
-      "commission": 5.0,
-      "stamp": 0.0,
-      "transfer": 0.11
-    },
-    "quote_time": "2026-10-29T15:32:29+08:00",
-    "signal": "AH10_2026-10-28",
-    "model": "opening_price_model",
-    "execution_time": "2026-10-29T09:30:00+08:00",
-    "observed_at": "2026-10-29T15:32:30.247599+08:00",
-    "price_source": "Tencent official open",
-    "same_day_delayed_recording": true
+    "reason": "no_preclose_intent_retry_next_session"
   }
 ]
 ```
