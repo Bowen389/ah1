@@ -1,16 +1,16 @@
 # AH溢价最低10% · 20万元模拟账户
 
-更新时间：2026-10-30T23:11:24.047738+08:00（北京时间）
+更新时间：2026-11-02T16:00:03.606397+08:00（北京时间）
 
 **PAPER_ONLY：没有真实券商订单。**
 
 - 初始资金：200,000.00元
-- 现金：40,637.37元
-- 持仓市值：160,403.00元
+- 现金：18,441.14元
+- 持仓市值：181,849.00元
 - 应收红利：0.00元
-- 总资产：201,040.37元
-- 累计收益：0.52%
-- 持仓数：15
+- 总资产：200,290.14元
+- 累计收益：0.15%
+- 持仓数：17
 - 未更新收盘估值：无
 
 ## 持仓
@@ -32,143 +32,174 @@
 |sh600012|皖通高速|600|2026-10-29|10559.11|
 |sh600026|中远海能|600|2026-10-29|11555.12|
 |sh600585|海螺水泥|600|2026-10-29|10565.11|
+|sh601318|中国平安|200|2026-11-02|10575.11|
+|sh601077|渝农商行|1600|2026-11-02|11621.12|
 
 ## 待执行候选
 
-### 2026-10-30信号 → 2026-11-02模拟买入
-
-合格样本162只，向上取整选最低10%共17只。
-
-|代码|名称|H代码|溢价率|参考均分预算|
-|---|---|---|---:|---:|
-|sh603259|药明康德|hk02359|-10.51%|11825.90|
-|sh600036|招商银行|hk03968|-6.73%|11825.90|
-|sh603986|兆易创新|hk03986|-4.38%|11825.90|
-|sz000338|潍柴动力|hk02338|0.29%|11825.90|
-|sz000333|美的集团|hk00300|7.80%|11825.90|
-|sh600276|恒瑞医药|hk01276|11.67%|11825.90|
-|sh601899|紫金矿业|hk02899|15.74%|11825.90|
-|sh601919|中远海控|hk01919|16.44%|11825.90|
-|sh601328|交通银行|hk03328|17.24%|11825.90|
-|sz002475|立讯精密|hk02475|17.60%|11825.90|
-|sh601658|邮储银行|hk01658|19.22%|11825.90|
-|sh600690|海尔智家|hk06690|21.46%|11825.90|
-|sh600660|福耀玻璃|hk03606|22.78%|11825.90|
-|sh600585|海螺水泥|hk00914|23.86%|11825.90|
-|sh601318|中国平安|hk02318|24.02%|11825.90|
-|sh600012|皖通高速|hk00995|24.94%|11825.90|
-|sh601077|渝农商行|hk03618|25.37%|11825.90|
 
 ## 最近事件
 
 ```json
 [
   {
-    "id": 20,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 37,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
+    "symbol": "sh603986",
+    "side": "BUY",
+    "reason": "cash_lot_or_volume_cap",
+    "signal": "AH10_2026-10-30"
+  },
+  {
+    "id": 38,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sz000338",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 21,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 39,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sz000333",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 22,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 40,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sh600276",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 23,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 41,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sh601899",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 24,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
-    "symbol": "sh601328",
-    "reason": "no_preclose_intent_retry_next_session"
-  },
-  {
-    "id": 25,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 42,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sh601919",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 26,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 43,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
+    "symbol": "sh601328",
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
+  },
+  {
+    "id": 44,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sz002475",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 27,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 45,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sh601658",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 28,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 46,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sh600690",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 29,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 47,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sh600660",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": 30,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
-    "symbol": "sh600031",
-    "reason": "no_preclose_intent_retry_next_session"
-  },
-  {
-    "id": 31,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
-    "symbol": "sh600012",
-    "reason": "no_preclose_intent_retry_next_session"
-  },
-  {
-    "id": 32,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
-    "symbol": "sh600026",
-    "reason": "no_preclose_intent_retry_next_session"
-  },
-  {
-    "id": 33,
-    "kind": "MISSED_CLOSE_INTENT",
-    "time": "2026-10-30T15:36:37.748495+08:00",
+    "id": 48,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
     "symbol": "sh600585",
-    "reason": "no_preclose_intent_retry_next_session"
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
   },
   {
-    "id": "AH10_2026-10-30",
-    "kind": "SIGNAL_FROZEN",
-    "time": "2026-10-30T21:38:54.712519+08:00",
-    "count": 17,
-    "eligible": 162,
-    "buy_date": "2026-11-02",
-    "sha256": "2f06971f468cd48e136148b4c2aba5117e2c4d5e69db825c7198bb08eff730e5"
+    "id": 49,
+    "kind": "BUY",
+    "time": "2026-11-02T16:00:03.606397+08:00",
+    "symbol": "sh601318",
+    "qty": 200,
+    "price": 52.85,
+    "value": 10570.0,
+    "fees": {
+      "commission": 5.0,
+      "stamp": 0.0,
+      "transfer": 0.11
+    },
+    "quote_time": "2026-11-02T15:59:33+08:00",
+    "signal": "AH10_2026-10-30",
+    "model": "opening_price_model",
+    "execution_time": "2026-11-02T09:30:00+08:00",
+    "observed_at": "2026-11-02T16:00:03.606397+08:00",
+    "price_source": "Tencent official open",
+    "same_day_delayed_recording": true
+  },
+  {
+    "id": 50,
+    "kind": "REJECT",
+    "time": "2026-11-02T16:00:03.606397+08:00",
+    "symbol": "sh600012",
+    "side": "BUY",
+    "reason": "existing_position_or_slots_full",
+    "signal": "AH10_2026-10-30"
+  },
+  {
+    "id": 51,
+    "kind": "BUY",
+    "time": "2026-11-02T16:00:03.606397+08:00",
+    "symbol": "sh601077",
+    "qty": 1600,
+    "price": 7.26,
+    "value": 11616.0,
+    "fees": {
+      "commission": 5.0,
+      "stamp": 0.0,
+      "transfer": 0.12
+    },
+    "quote_time": "2026-11-02T15:59:54+08:00",
+    "signal": "AH10_2026-10-30",
+    "model": "opening_price_model",
+    "execution_time": "2026-11-02T09:30:00+08:00",
+    "observed_at": "2026-11-02T16:00:03.606397+08:00",
+    "price_source": "Tencent official open",
+    "same_day_delayed_recording": true
   }
 ]
 ```
