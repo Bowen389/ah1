@@ -5,11 +5,11 @@ on:
     paths: ['ahpaper/**', 'main.py', 'tests/**', 'config.json', '.github/workflows/paper.yml']
   workflow_dispatch:
   schedule:
-    # UTC; Beijing = UTC+8. Same-day open-price paper recovery retains actual observation times.
+    # GitHub native schedule; UTC -> Asia/Shanghai 17:00 / 18:00
     - cron: '31,36,41,51 1 * * 1-5'
     - cron: '50,55 6 * * 1-5'
-    - cron: '10,20 7 * * 1-5'
-    - cron: '35,45,55 8 * * 1-5'
+    - cron: '0 9 * * 1-5'
+    - cron: '0 10 * * 1-5'
 permissions:
   contents: write
 concurrency:
