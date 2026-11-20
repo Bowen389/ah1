@@ -10,6 +10,8 @@ on:
     - cron: '50,55 6 * * 1-5'
     - cron: '0 9 * * 1-5'
     - cron: '0 10 * * 1-5'
+    - cron: '0 13 * * 1-5'  # 盘后兜底补丁新增
+    - cron: '30 0 * * 2-6'  # 盘后兜底补丁新增
 permissions:
   contents: write
 concurrency:
