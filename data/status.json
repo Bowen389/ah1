@@ -1,10 +1,10 @@
 {
-  "asof": "2026-11-20T23:46:44.426557+08:00",
+  "asof": "2026-11-23T17:33:40.677479+08:00",
   "cash": 18441.14,
-  "market_value": 183041.0,
+  "market_value": 182189.0,
   "receivable": 0.0,
-  "nav": 201482.14,
-  "return": 0.007410700000000103,
+  "nav": 200630.14,
+  "return": 0.003150700000000173,
   "positions": 17,
   "stale_marks": [],
   "final_close_mark": true
